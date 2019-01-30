@@ -13,6 +13,7 @@ import org.testng.annotations.Parameters;
 
 import com.sun.xml.internal.fastinfoset.sax.Properties;
 
+import avactis.pages.user.Login;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Testbase {
@@ -22,6 +23,8 @@ public class Testbase {
 	public static WebDriver driver;
 	public static Logger log = Logger.getLogger(Testbase.class);
 
+	
+	public Login login = new Login(driver);
 	@BeforeClass
 	@Parameters({"browserType","appUrl"})
 	public WebDriver setup(String browserName,String applicationURL){
@@ -64,7 +67,7 @@ public class Testbase {
 	@AfterClass
 	public void teardown(){
 		
-		
+		driver.close();
 		
 	}
 	
