@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 
 import avactis.testbase.Testbase;
+import avactis.utilities.WaitFunction;
 
 public class Login   {
 
@@ -42,6 +43,9 @@ public class Login   {
 	
 	@FindBy(xpath=("//button[contains(text(),'Register')]"))
 	WebElement Register_Button;
+	
+	@FindBy(xpath=("//span//a[contains(text(),'Sign Out')]"))
+	WebElement Sign_Out;
 	
 	/*@Override
 	protected void isLoaded() throws Error {
@@ -117,6 +121,26 @@ public class Login   {
 			return false;
 		}
 	}
+	
+	public boolean isUserLoggedIn(){
+		try {
+
+			if (WaitFunction.waitForElementPresent(Sign_Out, 5)) {
+
+				log.debug("User is logged in");
+				Sign_Out.click();
+				return true;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		log.debug("User is not logged in");
+		return false;
+	}
+		
+	
 	
 	/*public Registration doregistartion(){
 		Register_Button.click();
