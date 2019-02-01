@@ -3,6 +3,9 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="appUrl" value="http://localhost/avactis/"/>
   <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="avactis.test.listener.TestListener"/>
+  </listeners>
   <test thread-count="5" name="HMS Login Page Test(failed)">
     <classes>
       <class name="com.UserTest.LoginTest">
@@ -10,6 +13,7 @@
           <include name="teardown"/>
           <include name="setup"/>
           <include name="pageSetup"/>
+          <include name="extentSetUp"/>
           <include name="verifyValidLogin"/>
           <include name="afterMethod"/>
         </methods>

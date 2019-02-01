@@ -1,4 +1,4 @@
-package avactis.utilities;
+package avactis.test.listener;
 
 import java.io.IOException;
 
@@ -65,11 +65,11 @@ public class WebEventListener extends Testbase implements WebDriverEventListener
 		welog.info("Navigated forward to next page");
 	}
 
-	public void onException(Throwable error, WebDriver driver) {
+	public void onException1(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
 		welog.info("Exception occured: " + error);
 		try {
-		Testbase.takeScreenshotAtEndOfTest();
+		Testbase.getScreenshot(driver, "screenShotName");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -183,6 +183,11 @@ public class WebEventListener extends Testbase implements WebDriverEventListener
 	}
 
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void onException(Throwable throwable, WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -3,7 +3,9 @@
 <suite name="Suite" parallel="false">
 
 	
-
+       <listeners>
+		<listener class-name="avactis.test.listener.TestListener" />
+	</listeners>
 	<parameter name="browserType" value="chrome" />
 	<parameter name="appUrl"  value="http://localhost/avactis/" />
     

@@ -11,6 +11,7 @@
           <include name="verifyUserLoggedIn"/>
           <include name="pageSetup"/>
           <include name="verifyPassword_Feild_Masking"/>
+          <include name="extentSetUp"/>
           <include name="verifyValidLogin"/>
           <include name="afterMethod"/>
         </methods>

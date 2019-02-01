@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 
 import avactis.pages.user.Login;
 import avactis.pages.user.Myaccount;
+import avactis.test.listener.TestListener;
 import avactis.testbase.Testbase;
-import avactis.utilities.TestListener;
 @Listeners  (TestListener.class)
 public class LoginTest extends Testbase {
 	public static Logger log = Logger.getLogger(LoginTest.class.getName());
@@ -30,7 +30,7 @@ public class LoginTest extends Testbase {
   
   @Test
   public void verifyValidLogin() {
-	  
+	  extentTest = extent.createTest("verifyValidLogin");
 	assertTrue(login.verifyLogin("amol@test.com", "dfsf"));
  }
   

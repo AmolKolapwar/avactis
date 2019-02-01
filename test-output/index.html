@@ -201,6 +201,9 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;appUrl&quot; value=&quot;http://localhost/avactis/&quot;/&gt;
   &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;avactis.test.listener.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;HMS Login Page Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.UserTest.LoginTest&quot;/&gt;
@@ -247,24 +250,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyUserLoggedIn')
 data.setCell(0, 2, 'com.UserTest.LoginTest')
-data.setCell(0, 3, 6446);
+data.setCell(0, 3, 7001);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyInvalidLogin')
 data.setCell(1, 2, 'com.UserTest.LoginTest')
-data.setCell(1, 3, 4582);
+data.setCell(1, 3, 4140);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyValidLogin')
 data.setCell(2, 2, 'com.UserTest.LoginTest')
-data.setCell(2, 3, 3879);
+data.setCell(2, 3, 3882);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyPassword_Feild_Masking')
 data.setCell(3, 2, 'com.UserTest.LoginTest')
-data.setCell(3, 3, 2082);
+data.setCell(3, 3, 2066);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -291,63 +294,67 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.UserTest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">extentSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, http://localhost/avactis/)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">139 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetup</span>
-                <span class="method-start">7561 ms</span>
+                <span class="method-start">7703 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidLogin</span>
-                <span class="method-start">7562 ms</span>
+                <span class="method-start">7705 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">12146 ms</span>
+                <span class="method-start">11847 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetup</span>
-                <span class="method-start">12146 ms</span>
+                <span class="method-start">11847 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPassword_Feild_Masking</span>
-                <span class="method-start">12147 ms</span>
+                <span class="method-start">11848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">14231 ms</span>
+                <span class="method-start">13915 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetup</span>
-                <span class="method-start">14232 ms</span>
+                <span class="method-start">13916 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoggedIn</span>
-                <span class="method-start">14233 ms</span>
+                <span class="method-start">13916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">20682 ms</span>
+                <span class="method-start">20923 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">pageSetup</span>
-                <span class="method-start">20683 ms</span>
+                <span class="method-start">20924 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyValidLogin</span>
-                <span class="method-start">20684 ms</span>
+                <span class="method-start">20928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">25195 ms</span>
+                <span class="method-start">25796 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">25195 ms</span>
+                <span class="method-start">25797 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,9 +1,15 @@
-package avactis.utilities;
+package avactis.test.listener;
+
+import java.io.IOException;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.relevantcodes.extentreports.LogStatus;
 
 import avactis.testbase.Testbase;
 
@@ -33,19 +39,24 @@ public class TestListener extends Testbase implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Falied");
+		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		// ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
 		try {
 
-		takeScreenshotAtEndOfTest();
-			/*TestBase.childTest.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " Test case FAILED due to below issues:", ExtentColor.RED));
-			TestBase.childTest.fail(result.getThrowable());
-			TestBase.childTest.fail("Snapshot below : " + TestBase.childTest.addScreenCaptureFromPath(screenShotPath));*/
+			String screenShotPath = getScreenshot(driver, "screenShotName");
+			extentTest.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " Test case FAILED due to below issues:", ExtentColor.RED));
+			extentTest.fail(result.getThrowable());
+			extentTest.fail("Snapshot below : " + extentTest.addScreenCaptureFromPath(screenShotPath));
 		} catch (Exception e) {
 			System.out.println("=========== Error while taking Screenshot : ===========");
 			e.printStackTrace();
 		}
-	}
+		}
+		
+		
+	
+	
+	
 
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("*** Test " + result.getMethod().getMethodName() + " skipped...");
@@ -58,4 +69,6 @@ public class TestListener extends Testbase implements ITestListener {
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		System.out.println("*** Test failed but within percentage % " + result.getMethod().getMethodName());
 	}
+
+	
 }
