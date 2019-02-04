@@ -10,11 +10,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import avactis.pages.user.Login;
 import avactis.pages.user.Myaccount;
 import avactis.test.listener.TestListener;
 import avactis.testbase.Testbase;
-@Listeners  (TestListener.class)
+
+//@Listeners  (TestListener.class)
 public class LoginTest extends Testbase {
 	public static Logger log = Logger.getLogger(LoginTest.class.getName());
  
@@ -31,12 +34,13 @@ public class LoginTest extends Testbase {
   @Test
   public void verifyValidLogin() {
 	  extentTest = extent.createTest("verifyValidLogin");
+	  extentTest.log(Status.INFO, "Verify Valid Login");
 	assertTrue(login.verifyLogin("amol@test.com", "dfsf"));
  }
   
   @Test
   public void verifyInvalidLogin(){
-	  
+	  extentTest = extent.createTest("verifyInvalidLogin");
 	  assertTrue(login.verifyInvalidLogin("amol@test.com", "Testing"));
 	  
 	  
@@ -44,12 +48,16 @@ public class LoginTest extends Testbase {
   
   @Test 
   public void verifyPassword_Feild_Masking(){
-	  
+	  extentTest = extent.createTest("verifyPassword_Feild_Masking");
+	  extentTest.log(Status.INFO, "VerifyPassword Masking");
 	  assertTrue(login.verifyPasswordMasking("amol@test.com", "Testijg"));
   }
   
   @Test 
   public void verifyUserLoggedIn(){
+	  extentTest = extent.createTest("verifyUserLoggedIn");
+	  extentTest.log(Status.INFO, "Verify User Logged In");
+
 	  assertTrue(login.verifyLogin("amol@test.com", "Password$123"));
 	  if (login.isUserLoggedIn()){
 		  

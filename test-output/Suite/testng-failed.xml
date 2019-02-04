@@ -6,7 +6,7 @@
   <listeners>
     <listener class-name="avactis.test.listener.TestListener"/>
   </listeners>
-  <test thread-count="5" name="HMS Login Page Test(failed)">
+  <test thread-count="5" name="Avactis Login Page Test(failed)">
     <classes>
       <class name="com.UserTest.LoginTest">
         <methods>
@@ -19,5 +19,5 @@
         </methods>
       </class> <!-- com.UserTest.LoginTest -->
     </classes>
-  </test> <!-- HMS Login Page Test(failed) -->
+  </test> <!-- Avactis Login Page Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

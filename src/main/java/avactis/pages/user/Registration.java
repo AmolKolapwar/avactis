@@ -1,5 +1,7 @@
 package avactis.pages.user;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,4 +29,18 @@ public class Registration  {
     
     @FindBy (xpath=("//input[@name='customer_info[Customer][FirstName]']"))
     WebElement FirstName;
+    
+    @FindBy (xpath= ("//input[@name='customer_info[Customer][LastName]']"))
+    WebElement LastName;
+    
+    @FindBy(xpath=("//select[@name='customer_info[Customer][Country]']"))
+    List<WebElement> Country;
+    
+    @FindBy (xpath=("//select[@name='customer_info[Customer][State]']"))
+    List<WebElement> State;
+    
+    @FindBy(xpath=("//input[@name='customer_info[Customer][ZipCode]']"))
+    WebElement ZipCode;
+    
+    
 }

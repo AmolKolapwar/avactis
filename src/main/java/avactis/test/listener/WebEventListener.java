@@ -65,7 +65,7 @@ public class WebEventListener extends Testbase implements WebDriverEventListener
 		welog.info("Navigated forward to next page");
 	}
 
-	public void onException1(Throwable error, WebDriver driver) {
+	/*public void onException1(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
 		welog.info("Exception occured: " + error);
 		try {
@@ -74,7 +74,7 @@ public class WebEventListener extends Testbase implements WebDriverEventListener
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 		/*JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].style.border='3px solid red'", element);*/
 /*		

@@ -1,20 +1,69 @@
-2019-02-01 18:57:53,913 DEBUG [main] Testbase:91 - Chrome Browser loaded
-2019-02-01 18:57:55,088  INFO [main] WebEventListener:20 - Before navigating to: 'http://localhost/avactis/'
-2019-02-01 18:57:58,556  INFO [main] WebEventListener:25 - Navigated to:'http://localhost/avactis/'
-2019-02-01 18:57:58,610  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:00,082  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:00,707  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //input[@type='submit']]
-2019-02-01 18:58:02,679  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //input[@type='submit']]
-2019-02-01 18:58:02,731  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:04,116  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:04,797  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:06,264  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:06,885  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //input[@type='submit']]
-2019-02-01 18:58:09,498  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //input[@type='submit']]
-2019-02-01 18:58:09,570 DEBUG [main] Login:130 - User is logged in
-2019-02-01 18:58:09,578  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //span//a[contains(text(),'Sign Out')]]
-2019-02-01 18:58:11,768  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //span//a[contains(text(),'Sign Out')]]
-2019-02-01 18:58:11,829  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:13,132  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
-2019-02-01 18:58:13,732  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //input[@type='submit']]
-2019-02-01 18:58:15,667  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (33cee1e0a635482755ca7d886c6592e8)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:30,099 DEBUG [main] Testbase:78 - Chrome Browser loaded
+2019-02-04 16:05:31,310  INFO [main] WebEventListener:20 - Before navigating to: 'http://localhost/avactis/'
+2019-02-04 16:05:35,692  INFO [main] WebEventListener:25 - Navigated to:'http://localhost/avactis/'
+2019-02-04 16:05:35,763  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:37,375  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:38,017  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:40,514  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:40,580  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:42,080  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:42,822  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:44,225  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:44,835  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:47,785  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:47,858 DEBUG [main] Login:130 - User is logged in
+2019-02-04 16:05:47,866  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //span//a[contains(text(),'Sign Out')]]
+2019-02-04 16:05:49,961  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //span//a[contains(text(),'Sign Out')]]
+2019-02-04 16:05:49,999  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:51,675  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //a[@href='http://localhost/avactis/sign-in.php']]
+2019-02-04 16:05:52,268  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:54,322  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (8f60c826180ce8dc8da1a5f41d33974d)] -> xpath: //input[@type='submit']]
+2019-02-04 16:05:54,337  INFO [main] Testbase:47 - In Test Failure Method
+2019-02-04 16:05:54,936 DEBUG [main] Testbase:198 -  ########### Screenshot captured at location: ########### D:\Amol_BkUp\Avactis\avactis/FailedTestsScreenshots/\screenShotName_2019-02-04-04-05-54.png
+2019-02-04 16:05:55,739 DEBUG [main] cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,740 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2019-02-04 16:05:55,743 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2019-02-04 16:05:55,743 DEBUG [main] cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2019-02-04 16:05:55,898 DEBUG [main] cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,899 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2019-02-04 16:05:55,899 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2019-02-04 16:05:55,899 DEBUG [main] cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2019-02-04 16:05:55,905 DEBUG [main] cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,906 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2019-02-04 16:05:55,906 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2019-02-04 16:05:55,907 DEBUG [main] cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2019-02-04 16:05:55,915 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,916 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2019-02-04 16:05:55,917 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2019-02-04 16:05:55,917 DEBUG [main] cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2019-02-04 16:05:55,925 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,925 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2019-02-04 16:05:55,926 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2019-02-04 16:05:55,928 DEBUG [main] cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2019-02-04 16:05:55,942 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,942 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2019-02-04 16:05:55,943 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2019-02-04 16:05:55,944 DEBUG [main] cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2019-02-04 16:05:55,956 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2019-02-04 16:05:55,957 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2019-02-04 16:05:55,959 DEBUG [main] cache:45 - "test-view/standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2019-02-04 16:05:55,965 DEBUG [main] cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,965 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2019-02-04 16:05:55,966 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2019-02-04 16:05:55,966 DEBUG [main] cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2019-02-04 16:05:55,969 DEBUG [main] cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,969 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2019-02-04 16:05:55,969 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2019-02-04 16:05:55,970 DEBUG [main] cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2019-02-04 16:05:55,973 DEBUG [main] cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,974 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2019-02-04 16:05:55,975 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2019-02-04 16:05:55,975 DEBUG [main] cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2019-02-04 16:05:55,988 DEBUG [main] cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:55,988 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2019-02-04 16:05:55,989 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2019-02-04 16:05:55,989 DEBUG [main] cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2019-02-04 16:05:56,002 DEBUG [main] cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-04 16:05:56,003 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2019-02-04 16:05:56,005 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2019-02-04 16:05:56,006 DEBUG [main] cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"

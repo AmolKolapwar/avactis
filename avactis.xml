@@ -11,7 +11,7 @@
     
 	
 
-	<test name="HMS Login Page Test">
+	<test name="Avactis Login Page Test">
 		<classes>
 			<class name="com.UserTest.LoginTest" />
 		</classes>

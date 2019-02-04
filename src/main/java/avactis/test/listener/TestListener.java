@@ -6,9 +6,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.model.Media;
 import com.relevantcodes.extentreports.LogStatus;
 
 import avactis.testbase.Testbase;
@@ -22,7 +24,7 @@ public class TestListener extends Testbase implements ITestListener {
 		System.out.println(("*** Test Suite " + context.getName() + " ending ***"));
 		// ExtentTestManager.endTest();
 		// ExtentManager.getInstance().flush();
-		//Testbase.extent.flush();
+		extent.flush();
 	}
 
 	public void onTestStart(ITestResult result) {
@@ -33,8 +35,8 @@ public class TestListener extends Testbase implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("*** Executed " + result.getMethod().getMethodName() + " test successfully...");
 		// ExtentTestManager.getTest().log(Status.PASS, "Test passed");
-		//TestBase.childTest.log(Status.PASS,
-		//		MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
+	extentTest.log(Status.PASS,
+			MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
 
 	}
 
@@ -42,11 +44,11 @@ public class TestListener extends Testbase implements ITestListener {
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		// ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
 		try {
-
-			String screenShotPath = getScreenshot(driver, "screenShotName");
+            
+			String screenShotPath = getScreenshot(driver,  "screenShotName");
 			extentTest.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " Test case FAILED due to below issues:", ExtentColor.RED));
 			extentTest.fail(result.getThrowable());
-			extentTest.fail("Snapshot below : " + extentTest.addScreenCaptureFromPath(screenShotPath));
+			extentTest.fail("Snapshot below : " +   extentTest.addScreenCaptureFromPath(screenShotPath));
 		} catch (Exception e) {
 			System.out.println("=========== Error while taking Screenshot : ===========");
 			e.printStackTrace();

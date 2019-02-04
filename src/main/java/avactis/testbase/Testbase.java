@@ -2,11 +2,10 @@ package avactis.testbase;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
-import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -32,9 +31,6 @@ import avactis.pages.user.Login;
 import avactis.test.listener.WebEventListener;
 import avactis.utilities.FileManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 public class Testbase extends FileManager{
 
 	
@@ -48,20 +44,11 @@ public class Testbase extends FileManager{
 
 
 	
-	public Login login = new Login(driver);
+	public Login login;
 	
-	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		// after execution, you could see a folder "FailedTestsScreenshots"
-		// under src folder
-		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName
-				+ ".png";
-		File finalDestination = new File(destination);
-		FileUtils.copyFile(source, finalDestination);
-		return destination;
-	}
+	
+	
+	
 	/*public static void takeScreenshotAtEndOfTest() throws IOException {
 		//File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		//String currentDir = System.getProperty("user.dir");
@@ -123,10 +110,12 @@ public class Testbase extends FileManager{
 		return driver;
 		
 		
+			
 
 		
 	}	
 	@BeforeSuite
+	
 	public void extentSetUp() {
 
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + prjprop.getProperty("REPORT_LOCATION"));
@@ -146,15 +135,16 @@ public class Testbase extends FileManager{
 		htmlReporter.config().setTheme(Theme.DARK);
 
 	}
-		
 			
 			
 		
+	
+	
 	@AfterClass
 	public void teardown(){
 		
 		
-		
+		driver.quit();
 	}
 		/*public static String captureScreenshot(WebDriver driver, String screenShotName) throws Exception {
 
@@ -171,7 +161,48 @@ public class Testbase extends FileManager{
 
 			return dest;
 			
+			
+			DateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
+			DateFormat timeformat = new SimpleDateFormat("HHmmss");
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			Date date = new Date();
+			//System.out.println(dateFormat.format(date));
+			FileUtils.copyFile(source, new File(System.getProperty("user.dir") + "\\java\\screenshots\\"
+					+ dateFormat.format(date) + "\\" + screenshotname+"_"+timeformat.format(date)+ ".png"));
+			// FileUtils.copyDirectory(source, new File(
+			// "C:\\Users\\sanket\\git\\HMS_JAN_2019\\hms\\java\\screenshots" +
+			// screenshotname + ".jpeg"));
+			System.out.println("**********  ScreenShot taken for test " + screenshotname + "  **********");
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+			
 		}
 		*/
+	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException{
+		String dateName = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		// after execution, you could see a folder "FailedTestsScreenshots"
+		// under src folder
+		Date date = new Date();
+
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" +"\\"+ screenshotName +"_" +dateName
+				+ ".png";
+		
+		System.out.println("Screenshot captured at location: " + destination);
+
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(source, finalDestination);
+		log.debug(" ########### Screenshot captured at location: ########### " + destination);
+
+		return destination;
+	}
+	
+	
+	
+	
+	
 			
 }
