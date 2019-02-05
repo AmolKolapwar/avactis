@@ -28,6 +28,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import avactis.pages.user.Login;
+import avactis.pages.user.Registration;
 import avactis.test.listener.WebEventListener;
 import avactis.utilities.FileManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -45,6 +46,7 @@ public class Testbase extends FileManager{
 
 	
 	public Login login;
+	public Registration regostration;
 	
 	
 	

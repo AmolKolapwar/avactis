@@ -13,7 +13,10 @@
 
 	<test name="Avactis Login Page Test">
 		<classes>
-			<class name="com.UserTest.LoginTest" />
+		
+		
+		     <class name="com.UserTest.LoginTest" />
+			<class name="com.UserTest.RegistrationTest"/>
 		</classes>
 	</test>
 </suite>

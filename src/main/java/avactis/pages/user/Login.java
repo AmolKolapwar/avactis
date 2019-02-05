@@ -46,7 +46,13 @@ public class Login   {
 	
 	@FindBy(xpath=("//span//a[contains(text(),'Sign Out')]"))
 	WebElement Sign_Out;
+	 
+     @FindBy (xpath ="//div[@class='subheader']//h3[contains(text(),'New Customers')]")
+	 WebElement NewCustomers_Title;
 	
+     
+     @FindBy (xpath="//a[contains(@href,'register.php')]")
+     WebElement Register;
 	/*@Override
 	protected void isLoaded() throws Error {
 		// TODO Auto-generated method stub
@@ -142,12 +148,31 @@ public class Login   {
 		
 	
 	
-	/*public Registration doregistartion(){
-		Register_Button.click();
+	public   Registration verifyRegistrationButton(){
+		boolean flag;
+		try{
+		log.debug("Try to click on sing in button ");
+		Sign_In.click();
+		if (NewCustomers_Title.isDisplayed() && Register_Button.isDisplayed()){
+			
+			Register_Button.click();
+			flag = true;
+		}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}return new Registration(driver);
 		
-		return new Registration();
-	}*/
+		
+	}
 	
+	
+	public Registration doRegistaration(){
+		
+		if(Register.isDisplayed() && Register.isEnabled() ){
+			Register.click();
+		} 
+		return new Registration (driver);
+	}
 	public Myaccount doSignIn(String emaild, String password){
 		log.debug("Try to click on sign in button");
 		Sign_In.click();

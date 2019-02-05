@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="1" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28522" started-at="2019-02-04T10:35:27Z" finished-at="2019-02-04T10:35:55Z">
+  <suite name="Suite" duration-ms="55642" started-at="2019-02-05T12:44:07Z" finished-at="2019-02-05T12:45:02Z">
     <groups>
     </groups>
-    <test name="Avactis Login Page Test" duration-ms="28522" started-at="2019-02-04T10:35:27Z" finished-at="2019-02-04T10:35:55Z">
+    <test name="Avactis Login Page Test" duration-ms="55642" started-at="2019-02-05T12:44:07Z" finished-at="2019-02-05T12:45:02Z">
       <class name="com.UserTest.LoginTest">
-        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="extentSetUp" is-config="true" duration-ms="141" started-at="2019-02-04T10:35:26Z" finished-at="2019-02-04T10:35:27Z">
+        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="extentSetUp" is-config="true" duration-ms="131" started-at="2019-02-05T12:44:07Z" finished-at="2019-02-05T12:44:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="setup" is-config="true" duration-ms="8645" started-at="2019-02-04T10:35:27Z" finished-at="2019-02-04T10:35:35Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="setup" is-config="true" duration-ms="8810" started-at="2019-02-05T12:44:07Z" finished-at="2019-02-05T12:44:16Z">
           <params>
             <param index="0">
               <value>
@@ -27,47 +27,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="pageSetup" is-config="true" duration-ms="17" started-at="2019-02-04T10:35:35Z" finished-at="2019-02-04T10:35:35Z">
+        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="pageSetup" is-config="true" duration-ms="21" started-at="2019-02-05T12:44:16Z" finished-at="2019-02-05T12:44:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetup -->
-        <test-method status="PASS" signature="verifyInvalidLogin()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="verifyInvalidLogin" duration-ms="4826" started-at="2019-02-04T10:35:35Z" finished-at="2019-02-04T10:35:40Z">
+        <test-method status="PASS" signature="verifyInvalidLogin()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="verifyInvalidLogin" duration-ms="6107" started-at="2019-02-05T12:44:16Z" finished-at="2019-02-05T12:44:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-04T10:35:40Z" finished-at="2019-02-04T10:35:40Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-05T12:44:22Z" finished-at="2019-02-05T12:44:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="pageSetup" is-config="true" duration-ms="2" started-at="2019-02-04T10:35:40Z" finished-at="2019-02-04T10:35:40Z">
+        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="pageSetup" is-config="true" duration-ms="2" started-at="2019-02-05T12:44:22Z" finished-at="2019-02-05T12:44:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetup -->
-        <test-method status="PASS" signature="verifyPassword_Feild_Masking()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="verifyPassword_Feild_Masking" duration-ms="2237" started-at="2019-02-04T10:35:40Z" finished-at="2019-02-04T10:35:42Z">
+        <test-method status="PASS" signature="verifyNavigate_To_Ragistration()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="verifyNavigate_To_Ragistration" duration-ms="3063" started-at="2019-02-05T12:44:22Z" finished-at="2019-02-05T12:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigate_To_Ragistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-05T12:44:25Z" finished-at="2019-02-05T12:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="pageSetup" is-config="true" duration-ms="1" started-at="2019-02-05T12:44:25Z" finished-at="2019-02-05T12:44:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method status="PASS" signature="verifyPassword_Feild_Masking()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="verifyPassword_Feild_Masking" duration-ms="2715" started-at="2019-02-05T12:44:25Z" finished-at="2019-02-05T12:44:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPassword_Feild_Masking -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-04T10:35:42Z" finished-at="2019-02-04T10:35:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-05T12:44:27Z" finished-at="2019-02-05T12:44:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="pageSetup" is-config="true" duration-ms="2" started-at="2019-02-04T10:35:42Z" finished-at="2019-02-04T10:35:42Z">
+        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="pageSetup" is-config="true" duration-ms="1" started-at="2019-02-05T12:44:27Z" finished-at="2019-02-05T12:44:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetup -->
-        <test-method status="PASS" signature="verifyUserLoggedIn()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="verifyUserLoggedIn" duration-ms="7167" started-at="2019-02-04T10:35:42Z" finished-at="2019-02-04T10:35:49Z">
+        <test-method status="PASS" signature="verifyUserLoggedIn()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="verifyUserLoggedIn" duration-ms="11088" started-at="2019-02-05T12:44:27Z" finished-at="2019-02-05T12:44:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoggedIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-02-04T10:35:49Z" finished-at="2019-02-04T10:35:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="pageSetup" is-config="true" duration-ms="1" started-at="2019-02-04T10:35:49Z" finished-at="2019-02-04T10:35:49Z">
+        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="pageSetup" is-config="true" duration-ms="1" started-at="2019-02-05T12:44:39Z" finished-at="2019-02-05T12:44:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageSetup -->
-        <test-method status="FAIL" signature="verifyValidLogin()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="verifyValidLogin" duration-ms="4352" started-at="2019-02-04T10:35:49Z" finished-at="2019-02-04T10:35:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-05T12:44:39Z" finished-at="2019-02-05T12:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="verifyValidLogin()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="verifyValidLogin" duration-ms="5511" started-at="2019-02-05T12:44:39Z" finished-at="2019-02-05T12:44:44Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -78,7 +90,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.UserTest.LoginTest.verifyValidLogin(LoginTest.java:37)
+at com.UserTest.LoginTest.verifyValidLogin(LoginTest.java:39)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -110,15 +122,45 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-04T10:35:54Z" finished-at="2019-02-04T10:35:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-05T12:44:45Z" finished-at="2019-02-05T12:44:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.UserTest.LoginTest@50b494a6]" name="teardown" is-config="true" duration-ms="630" started-at="2019-02-04T10:35:54Z" finished-at="2019-02-04T10:35:55Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.UserTest.LoginTest@3a883ce7]" name="teardown" is-config="true" duration-ms="630" started-at="2019-02-05T12:44:45Z" finished-at="2019-02-05T12:44:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.UserTest.LoginTest -->
+      <class name="com.UserTest.RegistrationTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.UserTest.RegistrationTest@4973813a]" name="setup" is-config="true" duration-ms="8333" started-at="2019-02-05T12:44:45Z" finished-at="2019-02-05T12:44:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/avactis/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.UserTest.RegistrationTest@4973813a]" name="setup" is-config="true" duration-ms="1" started-at="2019-02-05T12:44:54Z" finished-at="2019-02-05T12:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyValidation_Message()[pri:0, instance:com.UserTest.RegistrationTest@4973813a]" name="verifyValidation_Message" duration-ms="7914" started-at="2019-02-05T12:44:54Z" finished-at="2019-02-05T12:45:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidation_Message -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.UserTest.RegistrationTest@4973813a]" name="teardown" is-config="true" duration-ms="806" started-at="2019-02-05T12:45:02Z" finished-at="2019-02-05T12:45:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.UserTest.RegistrationTest -->
     </test> <!-- Avactis Login Page Test -->
   </suite> <!-- Suite -->
 </testng-results>

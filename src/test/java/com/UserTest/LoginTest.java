@@ -14,6 +14,7 @@ import com.aventstack.extentreports.Status;
 
 import avactis.pages.user.Login;
 import avactis.pages.user.Myaccount;
+import avactis.pages.user.Registration;
 import avactis.test.listener.TestListener;
 import avactis.testbase.Testbase;
 
@@ -69,6 +70,16 @@ public class LoginTest extends Testbase {
 	  
   }
   
+
+@Test
+public void verifyNavigate_To_Ragistration(){
+	
+	extentTest = extent.createTest("verifyNavigate_To_Ragistration");
+	extentTest.log(Status.INFO, "Verify Navigate To  Registration Page");
+	login.verifyRegistrationButton();
+	log.info("Verify Registration Page URL");
+	assertTrue(driver.getCurrentUrl().endsWith("register.php"));
+}
 
 
 
