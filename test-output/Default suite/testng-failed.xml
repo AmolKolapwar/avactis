@@ -3,19 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.UserTest.LoginTest">
+      <class name="com.avactis.admin.test.AdminLoginTest">
         <methods>
           <include name="teardown"/>
-          <include name="verifyInvalidLogin"/>
           <include name="setup"/>
-          <include name="verifyUserLoggedIn"/>
-          <include name="pageSetup"/>
-          <include name="verifyPassword_Feild_Masking"/>
+          <include name="setup"/>
+          <include name="verifyLogin_PageUI"/>
+          <include name="verify_ValidLogin"/>
           <include name="extentSetUp"/>
-          <include name="verifyValidLogin"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.UserTest.LoginTest -->
+      </class> <!-- com.avactis.admin.test.AdminLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

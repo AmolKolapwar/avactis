@@ -3,20 +3,21 @@
 <suite name="Suite" parallel="false">
 
 	
-       <listeners>
-		<listener class-name="avactis.test.listener.TestListener" />
+    <listeners>
+		<listener class-name="com.avactis.test.listener.TestListener" />
 	</listeners>
-	<parameter name="browserType" value="chrome" />
-	<parameter name="appUrl"  value="http://localhost/avactis/" />
-    
 	
-
-	<test name="Avactis Login Page Test">
+	
+	
+	<parameter name="browserType" value="chrome" />
+    <test name="Avactis Admin Page Test">
+    <parameter name="appUrl"  value="http://localhost/Avactis/avactis-system/admin/signin.php" />
 		<classes>
-		
-		
-		     <class name="com.UserTest.LoginTest" />
-			<class name="com.UserTest.RegistrationTest"/>
+			<class name="com.avactis.admin.test.AdminLoginTest"/>
 		</classes>
 	</test>
+	
+
+	
+	
 </suite>
