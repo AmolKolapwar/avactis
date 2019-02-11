@@ -173,6 +173,9 @@ public class Login   {
 		} 
 		return new Registration (driver);
 	}
+	
+	
+	
 	public Myaccount doSignIn(String emaild, String password){
 		log.debug("Try to click on sign in button");
 		Sign_In.click();
@@ -183,7 +186,7 @@ public class Login   {
 			System.out.println("User Not Register Please Do Registration First");
 			Register_Button.click();
 		}else{
-			System.out.println("Login Sucessfully ");
+			System.out.println("Login Sucessfully");
 		}
 		return new Myaccount();
 	}

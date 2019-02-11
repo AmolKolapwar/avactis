@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10762" started-at="2019-02-07T12:18:25Z" finished-at="2019-02-07T12:18:36Z">
+  <suite name="Suite" duration-ms="42141" started-at="2019-02-11T12:45:02Z" finished-at="2019-02-11T12:45:44Z">
     <groups>
     </groups>
-    <test name="Avactis Admin Page Test" duration-ms="10762" started-at="2019-02-07T12:18:25Z" finished-at="2019-02-07T12:18:36Z">
-      <class name="com.avactis.admin.test.AdminLoginTest">
-        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="extentSetUp" is-config="true" duration-ms="169" started-at="2019-02-07T12:18:25Z" finished-at="2019-02-07T12:18:25Z">
+    <test name="Avactis Admin Page Test" duration-ms="42141" started-at="2019-02-11T12:45:02Z" finished-at="2019-02-11T12:45:44Z">
+      <class name="com.avactis.usertest.SearchResult">
+        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="extentSetUp" is-config="true" duration-ms="120" started-at="2019-02-11T12:45:02Z" finished-at="2019-02-11T12:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="setup" is-config="true" duration-ms="5250" started-at="2019-02-07T12:18:25Z" finished-at="2019-02-07T12:18:30Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="setup" is-config="true" duration-ms="7533" started-at="2019-02-11T12:45:02Z" finished-at="2019-02-11T12:45:10Z">
           <params>
             <param index="0">
               <value>
@@ -20,42 +20,65 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[http://localhost/Avactis/avactis-system/admin/signin.php]]>
+                <![CDATA[http://localhost/Avactis]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="setup" is-config="true" duration-ms="27" started-at="2019-02-07T12:18:30Z" finished-at="2019-02-07T12:18:30Z">
+        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="pageSetup" is-config="true" duration-ms="20" started-at="2019-02-11T12:45:10Z" finished-at="2019-02-11T12:45:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLogin_PageUI()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="verifyLogin_PageUI" duration-ms="141" started-at="2019-02-07T12:18:30Z" finished-at="2019-02-07T12:18:30Z">
+        </test-method> <!-- pageSetup -->
+        <test-method status="FAIL" signature="verifyValidLogin()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="verifyValidLogin" duration-ms="33411" started-at="2019-02-11T12:45:10Z" finished-at="2019-02-11T12:45:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.avactis.usertest.SearchResult.verifyValidLogin(SearchResult.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin_PageUI -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="setup" is-config="true" duration-ms="1" started-at="2019-02-07T12:18:30Z" finished-at="2019-02-07T12:18:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_InvalidLogin()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="verify_InvalidLogin" duration-ms="1740" started-at="2019-02-07T12:18:30Z" finished-at="2019-02-07T12:18:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_InvalidLogin -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="setup" is-config="true" duration-ms="3" started-at="2019-02-07T12:18:32Z" finished-at="2019-02-07T12:18:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_ValidLogin()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="verify_ValidLogin" duration-ms="2561" started-at="2019-02-07T12:18:32Z" finished-at="2019-02-07T12:18:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_ValidLogin -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@6e6c3152]" name="teardown" is-config="true" duration-ms="1008" started-at="2019-02-07T12:18:35Z" finished-at="2019-02-07T12:18:36Z">
+        </test-method> <!-- verifyValidLogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="teardown" is-config="true" duration-ms="615" started-at="2019-02-11T12:45:44Z" finished-at="2019-02-11T12:45:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.avactis.admin.test.AdminLoginTest -->
+      </class> <!-- com.avactis.usertest.SearchResult -->
     </test> <!-- Avactis Admin Page Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -23,6 +23,7 @@ import org.testng.annotations.Parameters;
 import com.avactis.pages.user.Login;
 import com.avactis.pages.user.Registration;
 import com.avactis.test.listener.WebEventListener;
+import com.avactis.usertest.SearchResult;
 import com.avactis.utilities.FileManager;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;

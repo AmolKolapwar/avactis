@@ -49,6 +49,10 @@ public class AdminLogin extends LoadableComponent<AdminLogin>{
 	@FindBy(xpath=("//div[@class='alert alert-danger']"))
 	WebElement Error_msg;
 	
+	@FindBy (xpath=("//a[@id='forget-password']"))
+	WebElement Forgotpassword;
+	
+	
 
 	@Override
 	protected void load() {
@@ -144,6 +148,39 @@ public class AdminLogin extends LoadableComponent<AdminLogin>{
 		}
 		
 		 
+	}
+	
+	public boolean verifyRememberMeClickable(){
+		
+		WaitFunction.waitForElementPresent(AdminEmail, 10);
+	    if (Remember.isDisplayed() &&  ! Remember.isSelected()){
+	    	
+	    	Remember.click();
+	    	return true;
+	    }else {
+	    	
+	    	System.out.println("Remember already selected ");
+	    	return false;
+	    }
+		
+
+	}
+	
+	
+	public ForgotPassword verifyForgotPasswordlink(){
+		WaitFunction.waitForElementPresent(AdminEmail, 10);
+
+	if (Forgotpassword.isDisplayed()){
+		
+		log.info("Click on Forgot Password Linkg");
+		Forgotpassword.click();
+		
+		log.info("Navigateing to FogorPassword Page ");
+		
+	}
+	
+	return new ForgotPassword(driver);
+		
 	}
 	
 	public AdminHomePage validLogin(String id, String password){

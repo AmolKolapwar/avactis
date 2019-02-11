@@ -49,5 +49,24 @@ public class AdminLoginTest  extends Testbase{
 		adminlogin.validLogin("amol@test.com", "amol_123");
 		assertTrue(driver.getCurrentUrl().endsWith("/index.php"),"Faild to load");
 	}
+	
+	
+	@Test 
+	public void  verifyRememberMe_clickable(){
+		extentTest = extent.createTest("verifyRememberMe_clickable");
+		extentTest.log(Status.INFO, "verifyRememberMe_clickable");
+		assertTrue(adminlogin.verifyRememberMeClickable());
+	}
+	
+	
+	@Test 
+	public void verifyForgotPass_Navigation(){
+		extentTest = extent.createTest("verifyForgotPass_Navigation");
+		extentTest.log(Status.INFO, "verifyForgotPass_Navigation");
+		adminlogin.verifyForgotPasswordlink();
+		log.info("verify the current page URL");
+		assertTrue(driver.getCurrentUrl().endsWith("/signin_password_recovery.php"));
+		
+	}
 
 }
