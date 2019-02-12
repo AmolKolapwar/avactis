@@ -11,8 +11,8 @@
       <class name="com.avactis.usertest.SearchResult">
         <methods>
           <include name="teardown"/>
-          <include name="verifyValidLogin"/>
           <include name="setup"/>
+          <include name="testing"/>
           <include name="pageSetup"/>
           <include name="extentSetUp"/>
         </methods>
