@@ -20,10 +20,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import com.avactis.pages.user.Cart;
+import com.avactis.pages.user.Checkout;
 import com.avactis.pages.user.Login;
 import com.avactis.pages.user.Registration;
 import com.avactis.test.listener.WebEventListener;
-import com.avactis.usertest.SearchResult;
 import com.avactis.utilities.FileManager;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -48,7 +49,8 @@ public class Testbase extends FileManager{
 	public Login login;
 	public Registration registration;
 	
-	
+	public Cart cart;
+//	public Checkout checkout;
 	
 	
 	/*public static void takeScreenshotAtEndOfTest() throws IOException {

@@ -8,15 +8,15 @@
   <test thread-count="5" name="Avactis Admin Page Test(failed)">
     <parameter name="appUrl" value="http://localhost/Avactis"/>
     <classes>
-      <class name="com.avactis.usertest.SearchResult">
+      <class name="com.avactis.usertest.TestBuyProduct">
         <methods>
           <include name="teardown"/>
+          <include name="pagesetup"/>
           <include name="setup"/>
-          <include name="testing"/>
-          <include name="pageSetup"/>
+          <include name="selctItemVerfiyCart"/>
           <include name="extentSetUp"/>
         </methods>
-      </class> <!-- com.avactis.usertest.SearchResult -->
+      </class> <!-- com.avactis.usertest.TestBuyProduct -->
     </classes>
   </test> <!-- Avactis Admin Page Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

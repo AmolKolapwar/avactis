@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21649" started-at="2019-02-12T11:31:05Z" finished-at="2019-02-12T11:31:26Z">
+  <suite name="Suite" duration-ms="26504" started-at="2019-02-18T13:27:47Z" finished-at="2019-02-18T13:28:13Z">
     <groups>
     </groups>
-    <test name="Avactis Admin Page Test" duration-ms="21649" started-at="2019-02-12T11:31:05Z" finished-at="2019-02-12T11:31:26Z">
-      <class name="com.avactis.usertest.SearchResult">
-        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="extentSetUp" is-config="true" duration-ms="209" started-at="2019-02-12T11:31:04Z" finished-at="2019-02-12T11:31:05Z">
+    <test name="Avactis Admin Page Test" duration-ms="26504" started-at="2019-02-18T13:27:47Z" finished-at="2019-02-18T13:28:13Z">
+      <class name="com.avactis.usertest.TestBuyProduct">
+        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.usertest.TestBuyProduct@6ebc05a6]" name="extentSetUp" is-config="true" duration-ms="132" started-at="2019-02-18T13:27:46Z" finished-at="2019-02-18T13:27:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="setup" is-config="true" duration-ms="7830" started-at="2019-02-12T11:31:05Z" finished-at="2019-02-12T11:31:12Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.usertest.TestBuyProduct@6ebc05a6]" name="setup" is-config="true" duration-ms="7446" started-at="2019-02-18T13:27:47Z" finished-at="2019-02-18T13:27:54Z">
           <params>
             <param index="0">
               <value>
@@ -27,19 +27,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="pageSetup()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="pageSetup" is-config="true" duration-ms="16" started-at="2019-02-12T11:31:12Z" finished-at="2019-02-12T11:31:12Z">
+        <test-method status="PASS" signature="pagesetup()[pri:0, instance:com.avactis.usertest.TestBuyProduct@6ebc05a6]" name="pagesetup" is-config="true" duration-ms="31" started-at="2019-02-18T13:27:54Z" finished-at="2019-02-18T13:27:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageSetup -->
-        <test-method status="PASS" signature="testing()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="testing" duration-ms="13152" started-at="2019-02-12T11:31:12Z" finished-at="2019-02-12T11:31:26Z">
+        </test-method> <!-- pagesetup -->
+        <test-method status="PASS" signature="selctItemVerfiyCart()[pri:0, instance:com.avactis.usertest.TestBuyProduct@6ebc05a6]" name="selctItemVerfiyCart" duration-ms="18366" started-at="2019-02-18T13:27:54Z" finished-at="2019-02-18T13:28:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testing -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.usertest.SearchResult@6ebc05a6]" name="teardown" is-config="true" duration-ms="632" started-at="2019-02-12T11:31:26Z" finished-at="2019-02-12T11:31:26Z">
+        </test-method> <!-- selctItemVerfiyCart -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.usertest.TestBuyProduct@6ebc05a6]" name="teardown" is-config="true" duration-ms="640" started-at="2019-02-18T13:28:12Z" finished-at="2019-02-18T13:28:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.avactis.usertest.SearchResult -->
+      </class> <!-- com.avactis.usertest.TestBuyProduct -->
     </test> <!-- Avactis Admin Page Test -->
   </suite> <!-- Suite -->
 </testng-results>

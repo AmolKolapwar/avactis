@@ -124,10 +124,12 @@ public boolean searchResult(String produname){
 
 			subcategoryName.click();
 			searchResult(subcategory);
-			
-            String productName= "//a//div[@class='product_name']//h3[contains(text(),'"+prodName+"')]/preceding::input[@value='Add To Cart']";
+			 
+
+           String productName= "//a//div[@class='product_name']//h3[contains(text(),'"+prodName+"')]/following::input[@value='Add To Cart']";
+            System.out.println("===========" + productName);
             WebElement productNames = driver.findElement(By.xpath(productName));
-			System.out.println("Print the Product Name  :"   + productName);
+			System.out.println("Print the Product Name  :"   + productNames.getText());
  
 
 			WaitFunction.waitForElementPresent(productNames, 10);
