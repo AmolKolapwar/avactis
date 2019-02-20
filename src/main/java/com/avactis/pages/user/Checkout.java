@@ -51,8 +51,11 @@ public class Checkout {
 	@FindBy (name="billingInfo[Country]")
 	WebElement billingContry;
 	
-	@FindBy(xpath="//input[@name='subscriptionTopics[Topics][1]']")
+	@FindBy(xpath="//input[@name='checkbox_shipping_same_as_billing']")
     WebElement SameAddress;
+	
+	@FindBy (xpath="//div[@class='checkout_buttons']/input[@class='en btn btn-primary button_continue_checkout']")
+	WebElement continuebutton;
 	
 	public void addbillingAddress(){
 		billingFirstName.sendKeys(FileManager.prjprop.getProperty("FirstName"));
@@ -73,10 +76,15 @@ public class Checkout {
 	}
 	
 	public Checkoutsteptwo checkout(){
-		
+    
 		addbillingAddress();
 		addShipingAddress();
 		
+		continuebutton.click();
 		return new Checkoutsteptwo(driver);
 	}
+	
+	
+	
+	
 }

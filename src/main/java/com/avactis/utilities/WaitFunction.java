@@ -1,7 +1,10 @@
 package com.avactis.utilities;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,4 +36,12 @@ public class WaitFunction {
 		}return false;
 	}
 
+	
+	public static boolean isElementSelected(int timeout, WebElement element) {
+		try {			
+			return element.isSelected();
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
 }

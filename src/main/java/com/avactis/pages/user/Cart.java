@@ -126,12 +126,15 @@ public class Cart extends LoadableComponent<Cart>{
 		
 		   for (int i =0;i<WebTable.getRwocount();i++){
 			for (int j=0;j<WebTable.getColumnCount();j++){
-				String Total=	WebTable.getData(i+1,j+3);
+				
+				System.out.println(i);
+				System.out.println(j);
+				/*String Total=	WebTable.getData(i+1,j+2);
 				System.out.println("Print the Total amount: "  + Total);
 
 				System.out.println("print the SubTotal Amount  :"   + TotalAmount.getText());
 				if (Total.equals(TotalAmount)){
-					assertEquals(Total, TotalAmount);
+					assertEquals(Total, TotalAmount);*/
 				
 			}
 			
@@ -146,7 +149,7 @@ public class Cart extends LoadableComponent<Cart>{
 	
 	
 
-	}
+	
 	public Checkout gotoCheckoutPage(){
 		
 		CheckOut.click();
