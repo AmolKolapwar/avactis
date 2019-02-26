@@ -12,6 +12,8 @@
 	<parameter name="browserType" value="chrome" />
     <test name="Avactis Admin Page Test">
     <parameter name="appUrl"  value="http://localhost/Avactis" />
+    
+    
 		<classes>
 			<class name="com.avactis.usertest.TestBuyProduct"/>
 		</classes>

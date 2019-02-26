@@ -41,7 +41,7 @@ public void selctItemVerfiyCart() throws InterruptedException{
 	  extentTest.log(Status.INFO, "selctItemVerfiyCart");
 	  searchproduct.selectProduct("DVD", "Classic Films", "Forbidden Planet");
 	  
-	 // searchproduct.selectProduct("DVD", "Classic Films", "James Bond Ultimate Collect ...");
+	 searchproduct.selectProduct("DVD", "Classic Films", "James Bond Ultimate Collect ...");
 	  cart.goToViewCart();
 	  cart.get();
 	  cart.verifyProductquntity();

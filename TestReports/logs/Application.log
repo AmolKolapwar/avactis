@@ -1,68 +1,72 @@
-2019-02-20 18:57:29,912 DEBUG [main] Testbase:82 - Chrome Browser loaded
-2019-02-20 18:57:31,123  INFO [main] WebEventListener:20 - Before navigating to: 'http://localhost/Avactis'
-2019-02-20 18:57:34,314  INFO [main] WebEventListener:25 - Navigated to:'http://localhost/Avactis'
-2019-02-20 18:57:34,646  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //ul[@class='dropdown-menu']//li//a[contains(text(),'Classic Films')]]
-2019-02-20 18:57:36,716  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //ul[@class='dropdown-menu']//li//a[contains(text(),'Classic Films')]]
-2019-02-20 18:57:46,776  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //a//div[@class='product_name']//h3[contains(text(),'Forbidden Planet')]/following::input[@value='Add To Cart']]
-2019-02-20 18:57:46,825  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //a//div[@class='product_name']//h3[contains(text(),'Forbidden Planet')]/following::input[@value='Add To Cart']]
-2019-02-20 18:57:47,925  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //a[contains(text(),'View Cart')]]
-2019-02-20 18:57:49,597  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //a[contains(text(),'View Cart')]]
-2019-02-20 18:57:50,246  INFO [main] Cart:113 - Get the All Option form drop down
-2019-02-20 18:57:50,623  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //a[contains(text(),'Checkout ')]]
-2019-02-20 18:57:52,650  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //a[contains(text(),'Checkout ')]]
-2019-02-20 18:57:52,651  INFO [main] Cart:156 - Click on Checkout button Navigat to Chekcout Page
-2019-02-20 18:57:53,821  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //input[@name='checkbox_shipping_same_as_billing']]
-2019-02-20 18:57:53,876  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //input[@name='checkbox_shipping_same_as_billing']]
-2019-02-20 18:57:53,892  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //div[@class='checkout_buttons']/input[@class='en btn btn-primary button_continue_checkout']]
-2019-02-20 18:57:53,948  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //div[@class='checkout_buttons']/input[@class='en btn btn-primary button_continue_checkout']]
-2019-02-20 18:58:03,974  INFO [main] Checkoutsteptwo:38 - Print the payment method size :1
-2019-02-20 18:58:04,005  INFO [main] Checkoutsteptwo:41 - Print the payment Method name : CashOnDelivery
-2019-02-20 18:58:04,065  INFO [main] Checkoutsteptwo:73 - Print the Shiping Mehtod Size :3
-2019-02-20 18:58:04,109  INFO [main] Checkoutsteptwo:80 - ------------Print the User Provided Method Name------- :Ground Shipping
-2019-02-20 18:58:04,121  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //div[@class ='shipping_method_name']/label]
-2019-02-20 18:58:04,160  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (6e52e3fac4ad5505e4cb44bfa9a3b514)] -> xpath: //div[@class ='shipping_method_name']/label]
-2019-02-20 18:58:04,160  INFO [main] Checkoutsteptwo:83 - Shiping Method Get Selected :Ground Shipping
-2019-02-20 18:58:04,953 DEBUG [main] cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:04,954 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
-2019-02-20 18:58:04,956 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
-2019-02-20 18:58:04,957 DEBUG [main] cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
-2019-02-20 18:58:05,111 DEBUG [main] cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,112 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
-2019-02-20 18:58:05,112 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
-2019-02-20 18:58:05,113 DEBUG [main] cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
-2019-02-20 18:58:05,116 DEBUG [main] cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
-2019-02-20 18:58:05,117 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
-2019-02-20 18:58:05,118 DEBUG [main] cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
-2019-02-20 18:58:05,125 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,126 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
-2019-02-20 18:58:05,127 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
-2019-02-20 18:58:05,127 DEBUG [main] cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
-2019-02-20 18:58:05,141 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,142 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
-2019-02-20 18:58:05,143 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
-2019-02-20 18:58:05,144 DEBUG [main] cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
-2019-02-20 18:58:05,158 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,158 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
-2019-02-20 18:58:05,159 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
-2019-02-20 18:58:05,159 DEBUG [main] cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
-2019-02-20 18:58:05,171 DEBUG [main] cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,172 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
-2019-02-20 18:58:05,172 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
-2019-02-20 18:58:05,173 DEBUG [main] cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
-2019-02-20 18:58:05,177 DEBUG [main] cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,177 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
-2019-02-20 18:58:05,178 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
-2019-02-20 18:58:05,178 DEBUG [main] cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
-2019-02-20 18:58:05,183 DEBUG [main] cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,185 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
-2019-02-20 18:58:05,186 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
-2019-02-20 18:58:05,188 DEBUG [main] cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
-2019-02-20 18:58:05,192 DEBUG [main] cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,192 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
-2019-02-20 18:58:05,195 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
-2019-02-20 18:58:05,196 DEBUG [main] cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
-2019-02-20 18:58:05,206 DEBUG [main] cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
-2019-02-20 18:58:05,208 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
-2019-02-20 18:58:05,209 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
-2019-02-20 18:58:05,209 DEBUG [main] cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2019-02-26 12:15:52,593 DEBUG [main] Testbase:90 - Chrome Browser loaded
+2019-02-26 12:15:53,936  INFO [main] WebEventListener:20 - Before navigating to: 'http://localhost/Avactis'
+2019-02-26 12:15:57,031  INFO [main] WebEventListener:25 - Navigated to:'http://localhost/Avactis'
+2019-02-26 12:15:57,269  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //ul[@class='dropdown-menu']//li//a[contains(text(),'Classic Films')]]
+2019-02-26 12:15:59,640  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //ul[@class='dropdown-menu']//li//a[contains(text(),'Classic Films')]]
+2019-02-26 12:16:09,725  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a//div[@class='product_name']//h3[contains(text(),'Forbidden Planet')]/following::input[@value='Add To Cart']]
+2019-02-26 12:16:09,893  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a//div[@class='product_name']//h3[contains(text(),'Forbidden Planet')]/following::input[@value='Add To Cart']]
+2019-02-26 12:16:11,384  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //ul[@class='dropdown-menu']//li//a[contains(text(),'Classic Films')]]
+2019-02-26 12:16:13,075  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //ul[@class='dropdown-menu']//li//a[contains(text(),'Classic Films')]]
+2019-02-26 12:16:23,145  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a//div[@class='product_name']//h3[contains(text(),'James Bond Ultimate Collect ...')]/following::input[@value='Add To Cart']]
+2019-02-26 12:16:23,309  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a//div[@class='product_name']//h3[contains(text(),'James Bond Ultimate Collect ...')]/following::input[@value='Add To Cart']]
+2019-02-26 12:16:24,464  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a[contains(text(),'View Cart')]]
+2019-02-26 12:16:26,228  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a[contains(text(),'View Cart')]]
+2019-02-26 12:16:26,832  INFO [main] Cart:122 - Get the All Option form drop down
+2019-02-26 12:16:27,015  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a[contains(text(),'Checkout ')]]
+2019-02-26 12:16:29,132  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //a[contains(text(),'Checkout ')]]
+2019-02-26 12:16:29,135  INFO [main] Cart:195 - Click on Checkout button Navigat to Chekcout Page
+2019-02-26 12:16:30,603  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //input[@name='checkbox_shipping_same_as_billing']]
+2019-02-26 12:16:30,654  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //input[@name='checkbox_shipping_same_as_billing']]
+2019-02-26 12:16:30,671  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //div[@class='checkout_buttons']/input[@class='en btn btn-primary button_continue_checkout']]
+2019-02-26 12:16:30,723  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //div[@class='checkout_buttons']/input[@class='en btn btn-primary button_continue_checkout']]
+2019-02-26 12:16:40,765  INFO [main] Checkoutsteptwo:38 - Print the payment method size :1
+2019-02-26 12:16:40,820  INFO [main] Checkoutsteptwo:41 - Print the payment Method name : CashOnDelivery
+2019-02-26 12:16:40,899  INFO [main] Checkoutsteptwo:73 - Print the Shiping Mehtod Size :3
+2019-02-26 12:16:41,019  INFO [main] Checkoutsteptwo:80 - ------------Print the User Provided Method Name------- :Ground Shipping
+2019-02-26 12:16:41,042  INFO [main] WebEventListener:40 - Trying to click on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //div[@class ='shipping_method_name']/label]
+2019-02-26 12:16:41,132  INFO [main] WebEventListener:45 - Clicked on: [[ChromeDriver: chrome on XP (faadc31af0281a1d08110fac1d69d250)] -> xpath: //div[@class ='shipping_method_name']/label]
+2019-02-26 12:16:41,132  INFO [main] Checkoutsteptwo:83 - Shiping Method Get Selected :Ground Shipping
+2019-02-26 12:16:41,924 DEBUG [main] cache:45 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:41,925 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2019-02-26 12:16:41,926 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2019-02-26 12:16:41,926 DEBUG [main] cache:45 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2019-02-26 12:16:42,054 DEBUG [main] cache:45 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,055 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2019-02-26 12:16:42,055 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2019-02-26 12:16:42,056 DEBUG [main] cache:45 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2019-02-26 12:16:42,058 DEBUG [main] cache:45 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,058 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2019-02-26 12:16:42,059 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2019-02-26 12:16:42,059 DEBUG [main] cache:45 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2019-02-26 12:16:42,067 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,068 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2019-02-26 12:16:42,068 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2019-02-26 12:16:42,069 DEBUG [main] cache:45 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2019-02-26 12:16:42,080 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,081 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2019-02-26 12:16:42,082 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2019-02-26 12:16:42,082 DEBUG [main] cache:45 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2019-02-26 12:16:42,096 DEBUG [main] cache:45 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,096 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2019-02-26 12:16:42,097 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2019-02-26 12:16:42,097 DEBUG [main] cache:45 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2019-02-26 12:16:42,110 DEBUG [main] cache:45 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,111 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2019-02-26 12:16:42,111 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2019-02-26 12:16:42,111 DEBUG [main] cache:45 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2019-02-26 12:16:42,114 DEBUG [main] cache:45 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,115 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2019-02-26 12:16:42,115 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2019-02-26 12:16:42,116 DEBUG [main] cache:45 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2019-02-26 12:16:42,120 DEBUG [main] cache:45 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,121 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2019-02-26 12:16:42,123 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2019-02-26 12:16:42,123 DEBUG [main] cache:45 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2019-02-26 12:16:42,127 DEBUG [main] cache:45 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,127 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2019-02-26 12:16:42,128 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2019-02-26 12:16:42,128 DEBUG [main] cache:45 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2019-02-26 12:16:42,141 DEBUG [main] cache:45 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2019-02-26 12:16:42,142 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2019-02-26 12:16:42,142 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2019-02-26 12:16:42,143 DEBUG [main] cache:45 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/nilesh.ISYNERGY/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
