@@ -28,19 +28,38 @@ public class WebTable extends Testbase{
 	}
 	
 	
-	public static String getData(int rowIdx, int colIdx){
-		
-		
-			List<WebElement> row = driver.findElements(By.tagName("tr"));
-			WebElement currentRow = row.get(rowIdx-1);
-			List<WebElement> col = currentRow.findElements(By.tagName("td"));
-			WebElement cell = col.get(colIdx-1);
-			return cell.getText();		
-		
+	public static WebElement getElement(int rowIdx, int colIdx) throws NoSuchElementException {
+		try {
+			
+			List<WebElement> tableRows = driver.findElements(By.tagName("tr"));
+			WebElement currentRow = tableRows.get(rowIdx);
+			List<WebElement> tableCols = currentRow.findElements(By.tagName("td"));
+			WebElement cell = tableCols.get(colIdx);
+			return cell;
+			
+		} catch (NoSuchElementException e) {
+			throw new NoSuchElementException("Failed to get cell editor");
+		}
 	}
 	
 	
-	
+	public static String getalldata(){
+		System.out.println("-----------------Print the All Item Name----------------------------------");
+		List<WebElement> row = driver.findElements(By.tagName("//table[@class='order_items without_images']/tbody/tr"));
+
+		List<WebElement> col = driver.findElements(By.tagName("td"));
+
+		for(int i=2;i<=row.size();i++)
+		{
+			List <WebElement>allColumnsInRow=driver.findElements(By.xpath("//table[@class='order_items without_images']/tbody/tr["+i+"]/td"));
+			for(int j=0;j<allColumnsInRow.size();j++)
+			{
+				System.out.print(allColumnsInRow.get(j).getText()+" ");
+			}
+			System.out.println();
+		}
+		return null;
+	}
 	
 	public static int getheadercoun(){
 		
@@ -61,10 +80,11 @@ public class WebTable extends Testbase{
 	public static void custemtable(){
 		
 		List<WebElement> row = driver.findElements(By.tagName("tr"));
-		String beforexpath = "//table[@summary='Shopping cart']/tbody/tr[";
-		String afterxpath = "]/td[5]";
 		
-		for (int i =2;i<row.size();i++){
+		String beforexpath = "//table[@class='order_items without_images']/tbody/tr[";
+		String afterxpath = "]/td[3]";
+		
+		for (int i =1;i<row.size();i++){
 			
 			String actualxpath = beforexpath+i+afterxpath;
 			WebElement elements = driver.findElement(By.xpath(actualxpath));
@@ -72,6 +92,16 @@ public class WebTable extends Testbase{
 			
 		}
 		
+		String beforxpath1 = "//table[@class='order_items without_images']/tbody/tr[";
+		String afterxpath1 = "]/td[2]";
+		
+		for (int j=1;j<row.size();j++){
+			
+			String actualxpath1 = beforxpath1+j+afterxpath1;
+			WebElement elements1 = driver.findElement(By.xpath(actualxpath1));
+			System.out.println("Print the Prize"+elements1);
+
+		}
 		
 	}
 

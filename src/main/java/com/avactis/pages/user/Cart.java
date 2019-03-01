@@ -53,9 +53,10 @@ public class Cart extends LoadableComponent<Cart>{
 	@FindBy (xpath="//li//strong[@class='shopping-total-price price']")
 	WebElement TotalAmount;
 	
-	
+    @FindBy (xpath="//input[@onclick ='submitStep(2);']")
+    WebElement Continue_Button;
 
-
+ 
 
 	@Override
 	protected void load() {

@@ -1,13 +1,13 @@
 package com.avactis.usertest;
 
 import org.apache.log4j.Logger;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.avactis.pages.user.Cart;
 import com.avactis.pages.user.Checkout;
 import com.avactis.pages.user.Checkoutsteptwo;
+import com.avactis.pages.user.CheckpoutFinalPage;
 import com.avactis.pages.user.SearchPage;
 import com.avactis.testbase.Testbase;
 import com.aventstack.extentreports.Status;
@@ -20,7 +20,7 @@ public static Logger log = Logger.getLogger(TestBuyProduct.class.getName());
  SearchPage  searchproduct;
  Checkout checkout;
  Checkoutsteptwo checkout_two;
- 
+ CheckpoutFinalPage finalpage;
  @BeforeMethod
  
  public  void pagesetup(){
@@ -29,6 +29,7 @@ public static Logger log = Logger.getLogger(TestBuyProduct.class.getName());
 	 checkout  = new Checkout(driver);
 	 searchproduct = new SearchPage(driver);
 	 checkout_two = new Checkoutsteptwo(driver);
+	 finalpage = new CheckpoutFinalPage(driver);
  }
  
 
@@ -52,6 +53,12 @@ public void selctItemVerfiyCart() throws InterruptedException{
 	  checkout_two.selectPymentMethod("CashOnDelivery");
 	  
 	  checkout_two.selectShipingoption("Ground Shipping");
+	  checkout_two.gotofinalPage();
+	  finalpage.getInformation("Forbidden Planet");
+	 
+	  finalpage.verifyProduct("James Bond Ultimate Collect ...");
+
+	
 }
    
 }
