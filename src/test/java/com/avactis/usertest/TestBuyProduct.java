@@ -8,6 +8,7 @@ import com.avactis.pages.user.Cart;
 import com.avactis.pages.user.Checkout;
 import com.avactis.pages.user.Checkoutsteptwo;
 import com.avactis.pages.user.CheckpoutFinalPage;
+import com.avactis.pages.user.ConfirmationPage;
 import com.avactis.pages.user.SearchPage;
 import com.avactis.testbase.Testbase;
 import com.aventstack.extentreports.Status;
@@ -21,6 +22,7 @@ public static Logger log = Logger.getLogger(TestBuyProduct.class.getName());
  Checkout checkout;
  Checkoutsteptwo checkout_two;
  CheckpoutFinalPage finalpage;
+ ConfirmationPage message;
  @BeforeMethod
  
  public  void pagesetup(){
@@ -30,6 +32,7 @@ public static Logger log = Logger.getLogger(TestBuyProduct.class.getName());
 	 searchproduct = new SearchPage(driver);
 	 checkout_two = new Checkoutsteptwo(driver);
 	 finalpage = new CheckpoutFinalPage(driver);
+	 message = new ConfirmationPage(driver);
  }
  
 
@@ -37,12 +40,12 @@ public static Logger log = Logger.getLogger(TestBuyProduct.class.getName());
 
 public void selctItemVerfiyCart() throws InterruptedException{
 
-	  
+	  boolean flag = true;
 	  extentTest = extent.createTest("selctItemVerfiyCart");
 	  extentTest.log(Status.INFO, "selctItemVerfiyCart");
 	  searchproduct.selectProduct("DVD", "Classic Films", "Forbidden Planet");
 	  
-	 searchproduct.selectProduct("DVD", "Classic Films", "James Bond Ultimate Collect ...");
+	  searchproduct.selectProduct("DVD", "Classic Films", "James Bond Ultimate Collect ...");
 	  cart.goToViewCart();
 	  cart.get();
 	  cart.verifyProductquntity();
@@ -54,11 +57,13 @@ public void selctItemVerfiyCart() throws InterruptedException{
 	  
 	  checkout_two.selectShipingoption("Ground Shipping");
 	  checkout_two.gotofinalPage();
-	  finalpage.getInformation("Forbidden Planet");
+	  finalpage.getInformation("Forbidden Planet","James Bond Ultimate Collection, Volume 1");
 	 
-	  finalpage.verifyProduct("James Bond Ultimate Collect ...");
+	  finalpage.verifyProductOnFinalPage("Forbidden Planet","James Bond Ultimate Collection, Volume 1");
 
-	
+	  finalpage.subTotal(72.58);
+	  finalpage.finalPage();
+	  message.message();
 }
    
 }

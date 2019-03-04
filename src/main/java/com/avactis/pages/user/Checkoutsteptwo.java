@@ -31,7 +31,9 @@ public class Checkoutsteptwo {
 	
     @FindBy (xpath="//input[@onclick ='submitStep(2);']")
     WebElement Continue_Button;
-	
+    
+    
+   
 	public void selectPymentMethod(String paymentmethodName) {
 		boolean flag = false;
 		List<WebElement> paymenmethod = driver.findElements(By.xpath("//div[@class='payment_methods']"));
@@ -87,6 +89,9 @@ public class Checkoutsteptwo {
 		}
 		
 	}
+	
+	
+	
 	
 public CheckpoutFinalPage gotofinalPage(){
 		
