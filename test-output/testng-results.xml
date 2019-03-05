@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="84296" started-at="2019-03-04T13:15:00Z" finished-at="2019-03-04T13:16:25Z">
+  <suite name="Suite" duration-ms="44647" started-at="2019-03-05T13:01:04Z" finished-at="2019-03-05T13:01:49Z">
     <groups>
     </groups>
-    <test name="Avactis Admin Page Test" duration-ms="84296" started-at="2019-03-04T13:15:00Z" finished-at="2019-03-04T13:16:25Z">
-      <class name="com.avactis.usertest.TestBuyProduct">
-        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.usertest.TestBuyProduct@57855c9a]" name="extentSetUp" is-config="true" duration-ms="129" started-at="2019-03-04T13:15:00Z" finished-at="2019-03-04T13:15:00Z">
+    <test name="Avactis Admin Page Test" duration-ms="44647" started-at="2019-03-05T13:01:04Z" finished-at="2019-03-05T13:01:49Z">
+      <class name="com.avactis.usertest.CartTest">
+        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="extentSetUp" is-config="true" duration-ms="124" started-at="2019-03-05T13:01:04Z" finished-at="2019-03-05T13:01:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.usertest.TestBuyProduct@57855c9a]" name="setup" is-config="true" duration-ms="9503" started-at="2019-03-04T13:15:00Z" finished-at="2019-03-04T13:15:10Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="setup" is-config="true" duration-ms="7505" started-at="2019-03-05T13:01:04Z" finished-at="2019-03-05T13:01:12Z">
           <params>
             <param index="0">
               <value>
@@ -27,19 +27,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="pagesetup()[pri:0, instance:com.avactis.usertest.TestBuyProduct@57855c9a]" name="pagesetup" is-config="true" duration-ms="32" started-at="2019-03-04T13:15:10Z" finished-at="2019-03-04T13:15:10Z">
+        <test-method status="PASS" signature="pagesteup()[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="pagesteup" is-config="true" duration-ms="15333" started-at="2019-03-05T13:01:12Z" finished-at="2019-03-05T13:01:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagesetup -->
-        <test-method status="PASS" signature="selctItemVerfiyCart()[pri:0, instance:com.avactis.usertest.TestBuyProduct@57855c9a]" name="selctItemVerfiyCart" duration-ms="74093" started-at="2019-03-04T13:15:10Z" finished-at="2019-03-04T13:16:24Z">
+        </test-method> <!-- pagesteup -->
+        <test-method status="PASS" signature="enterInvalidCoupan()[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="enterInvalidCoupan" duration-ms="3176" started-at="2019-03-05T13:01:27Z" finished-at="2019-03-05T13:01:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selctItemVerfiyCart -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.usertest.TestBuyProduct@57855c9a]" name="teardown" is-config="true" duration-ms="641" started-at="2019-03-04T13:16:24Z" finished-at="2019-03-04T13:16:25Z">
+        </test-method> <!-- enterInvalidCoupan -->
+        <test-method status="PASS" signature="pagesteup()[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="pagesteup" is-config="true" duration-ms="15811" started-at="2019-03-05T13:01:30Z" finished-at="2019-03-05T13:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagesteup -->
+        <test-method status="PASS" signature="verifyCardItem()[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="verifyCardItem" duration-ms="2171" started-at="2019-03-05T13:01:46Z" finished-at="2019-03-05T13:01:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCardItem -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.usertest.CartTest@7c29daf3]" name="teardown" is-config="true" duration-ms="627" started-at="2019-03-05T13:01:48Z" finished-at="2019-03-05T13:01:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.avactis.usertest.TestBuyProduct -->
+      </class> <!-- com.avactis.usertest.CartTest -->
     </test> <!-- Avactis Admin Page Test -->
   </suite> <!-- Suite -->
 </testng-results>

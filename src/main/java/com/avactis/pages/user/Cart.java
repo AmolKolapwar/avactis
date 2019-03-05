@@ -14,7 +14,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 
+import com.avactis.utilities.WaitFunction;
 import com.avactis.utilities.WebTable;
 
 public class Cart extends LoadableComponent<Cart>{
@@ -56,7 +58,14 @@ public class Cart extends LoadableComponent<Cart>{
     @FindBy (xpath="//input[@onclick ='submitStep(2);']")
     WebElement Continue_Button;
 
- 
+    @FindBy (xpath="//input[@id='input_promo_code']")
+    WebElement PromoCode;
+    
+    @FindBy (xpath="//div[@class='col-lg-3']//input[@class='btn input_submit']")
+    WebElement ApplyButton;
+    
+    @FindBy (xpath="//div[@class='promo_code_form']//div[@class='note note-danger']")
+    WebElement Error_msg;
 
 	@Override
 	protected void load() {
@@ -185,7 +194,26 @@ public class Cart extends LoadableComponent<Cart>{
 					
 		
 		
-		
+		public void verifyApplycoupanWithInvalidData(String coupan){
+			
+			WaitFunction.waitForElementPresent(PromoCode, 10);
+			PromoCode.clear();
+			PromoCode.sendKeys(coupan);
+			ApplyButton.click();
+			WaitFunction.waitForElementPresent(Error_msg, 10);
+			
+			log.info("-------Verify The Error Message--------------------");
+			if(Error_msg.isDisplayed()){
+				assertTrue(Error_msg.getText().equalsIgnoreCase("Invalid Promo Code. Please enter correct promo code."));
+				System.out.println("---------It Showing error Message for Invalid Data------------");
+			}else{
+				
+				System.out.println("Message not Displey");
+			}
+			
+			
+			
+		}
 	
 	
 

@@ -13,7 +13,7 @@
     <test name="Avactis Admin Page Test">
     <parameter name="appUrl"  value="http://localhost/Avactis/avactis-system/admin/signin.php" />
 		<classes>
-			<class name="com.avactis.admin.test.AdminLoginTest"/>
+			<class name="com.avactis.usertest.CartTest"/>
 		</classes>
 	</test>
 	

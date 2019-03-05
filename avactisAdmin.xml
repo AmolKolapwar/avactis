@@ -15,7 +15,7 @@
     
     
 		<classes>
-			<class name="com.avactis.usertest.TestBuyProduct"/>
+			<class name="com.avactis.usertest.CartTest"/>
 		</classes>
 	</test>
 	
