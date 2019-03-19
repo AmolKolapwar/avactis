@@ -1,6 +1,7 @@
 package com.avactis.usertest;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -59,6 +60,8 @@ public void selctItemVerfiyCart() throws InterruptedException{
 	  checkout_two.gotofinalPage();
 	  finalpage.getInformation("Forbidden Planet","James Bond Ultimate Collection, Volume 1");
 	 
+	  
+	  Assert.assertTrue(finalpage.verifyProductOnFinalPage("Forbidden Planet","James Bond Ultimate Collection, Volume 1"), "Testing");
 	  finalpage.verifyProductOnFinalPage("Forbidden Planet","James Bond Ultimate Collection, Volume 1");
 
 	  finalpage.subTotal(72.58);

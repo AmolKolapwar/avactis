@@ -42,12 +42,12 @@ public class FileManager {
 		}
 	}
 		
-		public static Object[][] getTestData(String fileName,String sheetName) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException {
+		public static Object[][] getTestData(String sheetName) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException {
 			FileInputStream file = null;
 			try {
 				
 			//	String testDataPath = System.getProperty("user.dir") +prjprop.getProperty("TESTDATA_PATH")+fileName+".xlsx";
-				String testDataPath = System.getProperty("user.dir") +prjprop.getProperty("TESTDATA_PATH");
+				String testDataPath = System.getProperty("user.dir") + "\\TestData\\Testing.xlsx";//prjprop.getProperty("TESTDATA_PATH");
 				
 				System.out.println("########### EXCEL FILE PATH :"+testDataPath+" ###########");
 				
@@ -72,6 +72,8 @@ public class FileManager {
 					// System.out.println(data[i][k]);
 				}
 			}
+			
+			System.out.println(data);
 			return data;
 		}
 

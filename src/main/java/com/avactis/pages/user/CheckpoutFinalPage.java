@@ -90,7 +90,7 @@ public class CheckpoutFinalPage {
 	
 	
 	
-	public void verifyProductOnFinalPage(String name,String name1){
+	public boolean  verifyProductOnFinalPage(String name,String name1){
 		WebElement textpresent = null;
 		String ItemText = null;
 		int rowcount = WebTable.getRwocount();
@@ -108,6 +108,7 @@ public class CheckpoutFinalPage {
 				if(ItemText.contains(name) ) {
 					System.out.println("Item in Cart");
 					
+					return true;
 					
 				}else if (ItemText.contains(name1)){
 					
@@ -131,6 +132,7 @@ public class CheckpoutFinalPage {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		return false;
 		
 		
 		

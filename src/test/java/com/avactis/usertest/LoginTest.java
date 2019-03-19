@@ -4,13 +4,16 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.avactis.pages.user.Login;
 import com.avactis.testbase.Testbase;
 import com.avactis.testdata.UserDataProvider;
+import com.avactis.utilities.FileManager;
 import com.aventstack.extentreports.Status;
 
 //@Listeners  (TestListener.class)
@@ -27,15 +30,22 @@ public class LoginTest extends Testbase {
   }
 
   
-  @Test(dataProvider ="setLoginData",dataProviderClass = UserDataProvider.class)
-  public void verifyValidLogin() {
+  @DataProvider 
+  public Object [][] testing () throws InvalidFormatException{
+	  
+	  Object data [][] = FileManager.getTestData("Login");
+	  return data;
+  }
+  
+  @Test (dataProvider = "testing")
+  public void verifyValidLogin(String Username,String passwordt ) {
 	  extentTest = extent.createTest("verifyValidLogin");
 	  extentTest.log(Status.INFO, "Verify Valid Login");
-	  assertTrue(login.verifyLogin("UserName", "Password"));
+	  assertTrue(login.verifyLogin("Username", "passwordt"));
  }
   
   /*@Test
-  public void verifyInvalidLogin(){
+  public void verifyInvalidLogin(){	
 	  extentTest = extent.createTest("verifyInvalidLogin");
 	  assertTrue(login.verifyInvalidLogin("amol@test.com", "Testing"));
 	  

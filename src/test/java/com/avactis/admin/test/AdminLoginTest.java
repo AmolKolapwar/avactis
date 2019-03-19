@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.avactis.pages.admin.AdminHomePage;
 import com.avactis.pages.admin.AdminLogin;
 import com.avactis.testbase.Testbase;
 import com.aventstack.extentreports.Status;
@@ -13,11 +14,12 @@ import com.aventstack.extentreports.Status;
 public class AdminLoginTest  extends Testbase{
 	public static Logger log = Logger.getLogger(AdminLoginTest.class.getName());
 	AdminLogin adminlogin;
-	
+	AdminHomePage adminhome;
 	
 	@BeforeMethod
 	public void setup(){
 		adminlogin= new AdminLogin(driver);
+		adminhome = new AdminHomePage(driver);
 	}
 	
 	
@@ -31,7 +33,7 @@ public class AdminLoginTest  extends Testbase{
 	}
 	
 	
-	@Test
+	/*@Test
 	public void verify_InvalidLogin(){
 		
 		extentTest = extent.createTest("verify_InvalidLogin");
@@ -39,9 +41,9 @@ public class AdminLoginTest  extends Testbase{
 		assertTrue(adminlogin.invalidLogin("amol@testing.com", "testing"));
 
 	}
+	*/
 	
-	
-	@Test
+	@Test (priority =1)
 	public void verify_ValidLogin(){
 		
 		extentTest = extent.createTest("verify_ValidLogin");
@@ -51,7 +53,7 @@ public class AdminLoginTest  extends Testbase{
 	}
 	
 	
-	@Test 
+	/*@Test 
 	public void  verifyRememberMe_clickable(){
 		extentTest = extent.createTest("verifyRememberMe_clickable");
 		extentTest.log(Status.INFO, "verifyRememberMe_clickable");
@@ -66,6 +68,14 @@ public class AdminLoginTest  extends Testbase{
 		adminlogin.verifyForgotPasswordlink();
 		log.info("verify the current page URL");
 		assertTrue(driver.getCurrentUrl().endsWith("/signin_password_recovery.php"));
+		
+	}*/
+	
+	@Test(priority =2)
+	public void table() throws InterruptedException{
+		extentTest = extent.createTest("table");
+		extentTest.log(Status.INFO, "table");
+		adminhome.Order();
 		
 	}
 

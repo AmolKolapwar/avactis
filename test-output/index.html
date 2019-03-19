@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Amol_BkUp\Avactis\avactis\avactisAdmin.xml</span>
+                    <span>D:\Amol_BkUp\Avactis\avactis\avactis.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avactis.usertest.LoginTest" hash-for-method="verifyValidLogin">verifyValidLogin</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avactis.admin.test.AdminLoginTest" hash-for-method="table">table</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avactis.admin.test.AdminLoginTest" hash-for-method="verifyLogin_PageUI">verifyLogin_PageUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.avactis.admin.test.AdminLoginTest" hash-for-method="verify_ValidLogin">verify_ValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,32 +127,39 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.avactis.usertest.LoginTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.avactis.admin.test.AdminLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyValidLogin">
-                  </a> <!-- verifyValidLogin -->
-                  <span class="method-name">verifyValidLogin</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-	at com.avactis.utilities.FileManager.getTestData(FileManager.java:64)
-	at com.avactis.testdata.UserDataProvider.setHospitalValidTestData(UserDataProvider.java:13)
-	... 22 more
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
+                  <a name="table">
+                  </a> <!-- table -->
+                  <span class="method-name">table</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin_PageUI">
+                  </a> <!-- verifyLogin_PageUI -->
+                  <span class="method-name">verifyLogin_PageUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_ValidLogin">
+                  </a> <!-- verify_ValidLogin -->
+                  <span class="method-name">verify_ValidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Amol_BkUp\Avactis\avactis\avactisAdmin.xml</span>
+            <span class="header-content">D:\Amol_BkUp\Avactis\avactis\avactis.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -154,9 +171,9 @@ Caused by: java.lang.NullPointerException
     &lt;listener class-name=&quot;com.avactis.test.listener.TestListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Avactis Admin Page Test&quot;&gt;
-    &lt;parameter name=&quot;appUrl&quot; value=&quot;http://localhost/Avactis&quot;/&gt;
+    &lt;parameter name=&quot;appUrl&quot; value=&quot;http://localhost/Avactis/avactis-system/admin/signin.php&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.avactis.usertest.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.avactis.admin.test.AdminLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Avactis Admin Page Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -196,16 +213,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyValidLogin')
-data.setCell(0, 2, 'com.avactis.usertest.LoginTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'table')
+data.setCell(0, 2, 'com.avactis.admin.test.AdminLoginTest')
+data.setCell(0, 3, 28410);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_ValidLogin')
+data.setCell(1, 2, 'com.avactis.admin.test.AdminLoginTest')
+data.setCell(1, 3, 3374);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLogin_PageUI')
+data.setCell(2, 2, 'com.avactis.admin.test.AdminLoginTest')
+data.setCell(2, 3, 172);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -231,18 +256,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.avactis.usertest.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.avactis.admin.test.AdminLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">extentSetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setup(chrome, http://localhost/Avactis)</span>
-                <span class="method-start">122 ms</span>
+                <span class="method-name">setup(chrome, http://localhost/Avactis/avactis-system/admin/signin.php)</span>
+                <span class="method-start">116 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin_PageUI</span>
+                <span class="method-start">5803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_ValidLogin</span>
+                <span class="method-start">5988 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9365 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">table</span>
+                <span class="method-start">9366 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7141 ms</span>
+                <span class="method-start">37776 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

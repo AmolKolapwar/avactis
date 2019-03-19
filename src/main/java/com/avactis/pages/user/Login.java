@@ -1,15 +1,19 @@
 package com.avactis.pages.user;
 
-import static org.testng.Assert.assertTrue;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.LoadableComponent;
 
-import com.avactis.testbase.Testbase;
 import com.avactis.utilities.WaitFunction;
 
 public class Login   {
@@ -32,7 +36,7 @@ public class Login   {
 	@FindBy(xpath=("//input[@id='account_sign_in_form_passwd_id']"))
 	WebElement password;
 	
-	@FindBy(xpath=("//a[@href='http://localhost/avactis/sign-in.php']"))
+	@FindBy(xpath=("//a[@href='http://localhost/Avactis/sign-in.php']"))
 	WebElement Sign_In;
    
 	@FindBy(xpath=("//div[@class='note note-danger']"))
@@ -191,5 +195,35 @@ public class Login   {
 		return new Myaccount();
 	}
 	
+	
+	
+	public void verifyActiveURL() throws IOException{
+		
+		List <WebElement> links  = driver.findElements(By.tagName("a"));
+		links.addAll(driver.findElements(By.tagName("img")));
+		System.out.println("Size of all links :" + links.size());
+
+		List<WebElement> activelink = new ArrayList<WebElement>();
+		
+		for (int i = 0; i < links.size(); i++) {
+
+			if (links.get(i).getAttribute("href") != null) {
+				activelink.add(links.get(i));
+				
+				System.out.println("Print the active link only :" + activelink.size());
+
+				for (int j = 0; j < activelink.size(); j++) {
+
+					HttpsURLConnection conection = (HttpsURLConnection) new URL(activelink.get(j).getAttribute("href")).openConnection();
+					conection.connect();
+					String message = conection.getResponseMessage();
+					conection.disconnect();
+
+					System.out.println(activelink.get(j).getAttribute("href") + "---" + message);
+				}
+
+			}
+		}
+	}
 
 }

@@ -6,18 +6,17 @@
     <listener class-name="com.avactis.test.listener.TestListener"/>
   </listeners>
   <test thread-count="5" name="Avactis Admin Page Test(failed)">
-    <parameter name="appUrl" value="http://localhost/Avactis"/>
+    <parameter name="appUrl" value="http://localhost/Avactis/avactis-system/admin/signin.php"/>
     <classes>
-      <class name="com.avactis.usertest.LoginTest">
+      <class name="com.avactis.admin.test.AdminLoginTest">
         <methods>
           <include name="teardown"/>
-          <include name="pageSetup"/>
-          <include name="afterMethod"/>
           <include name="setup"/>
-          <include name="verifyValidLogin"/>
+          <include name="setup"/>
+          <include name="table"/>
           <include name="extentSetUp"/>
         </methods>
-      </class> <!-- com.avactis.usertest.LoginTest -->
+      </class> <!-- com.avactis.admin.test.AdminLoginTest -->
     </classes>
   </test> <!-- Avactis Admin Page Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
