@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="38353" started-at="2019-03-19T12:55:52Z" finished-at="2019-03-19T12:56:30Z">
+  <suite name="Suite" duration-ms="36206" started-at="2019-03-20T11:06:36Z" finished-at="2019-03-20T11:07:12Z">
     <groups>
     </groups>
-    <test name="Avactis Admin Page Test" duration-ms="38353" started-at="2019-03-19T12:55:52Z" finished-at="2019-03-19T12:56:30Z">
+    <test name="Avactis Admin Page Test" duration-ms="36206" started-at="2019-03-20T11:06:36Z" finished-at="2019-03-20T11:07:12Z">
       <class name="com.avactis.admin.test.AdminLoginTest">
-        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="extentSetUp" is-config="true" duration-ms="100" started-at="2019-03-19T12:55:52Z" finished-at="2019-03-19T12:55:52Z">
+        <test-method status="PASS" signature="extentSetUp()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="extentSetUp" is-config="true" duration-ms="126" started-at="2019-03-20T11:06:36Z" finished-at="2019-03-20T11:06:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="5636" started-at="2019-03-19T12:55:52Z" finished-at="2019-03-19T12:55:58Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="5352" started-at="2019-03-20T11:06:36Z" finished-at="2019-03-20T11:06:41Z">
           <params>
             <param index="0">
               <value>
@@ -27,31 +27,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="39" started-at="2019-03-19T12:55:58Z" finished-at="2019-03-19T12:55:58Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="26" started-at="2019-03-20T11:06:41Z" finished-at="2019-03-20T11:06:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyLogin_PageUI()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="verifyLogin_PageUI" duration-ms="172" started-at="2019-03-19T12:55:58Z" finished-at="2019-03-19T12:55:58Z">
+        <test-method status="PASS" signature="verifyLogin_PageUI()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="verifyLogin_PageUI" duration-ms="99" started-at="2019-03-20T11:06:41Z" finished-at="2019-03-20T11:06:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin_PageUI -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="3" started-at="2019-03-19T12:55:58Z" finished-at="2019-03-19T12:55:58Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="3" started-at="2019-03-20T11:06:42Z" finished-at="2019-03-20T11:06:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_ValidLogin()[pri:1, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="verify_ValidLogin" duration-ms="3374" started-at="2019-03-19T12:55:58Z" finished-at="2019-03-19T12:56:01Z">
+        <test-method status="PASS" signature="verify_ValidLogin()[pri:1, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="verify_ValidLogin" duration-ms="2770" started-at="2019-03-20T11:06:42Z" finished-at="2019-03-20T11:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_ValidLogin -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-19T12:56:01Z" finished-at="2019-03-19T12:56:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="setup" is-config="true" duration-ms="2" started-at="2019-03-20T11:06:44Z" finished-at="2019-03-20T11:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="table()[pri:2, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="table" duration-ms="28410" started-at="2019-03-19T12:56:01Z" finished-at="2019-03-19T12:56:30Z">
+        <test-method status="PASS" signature="table()[pri:2, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="table" duration-ms="27264" started-at="2019-03-20T11:06:44Z" finished-at="2019-03-20T11:07:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- table -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="teardown" is-config="true" duration-ms="677" started-at="2019-03-19T12:56:30Z" finished-at="2019-03-19T12:56:30Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.avactis.admin.test.AdminLoginTest@56aac163]" name="teardown" is-config="true" duration-ms="659" started-at="2019-03-20T11:07:12Z" finished-at="2019-03-20T11:07:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

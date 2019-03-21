@@ -1,6 +1,8 @@
 package com.avactis.pages.admin;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -40,7 +42,13 @@ public class AdminHomePage {
 	
 		System.out.println("Print the order page title :"  + driver.getTitle());
 		
+	WebElement date= driver.findElement(By.xpath("//input[@id='from_order_date']"));
+	String date_value = "30-03-2019";
+	datepicker(driver ,date, date_value);	
 	
+	WebElement date2 = driver.findElement(By.xpath("//input[@id='to_order_date']"));
+	String  datev = "05-05-2019";
+	datepicker(driver, date2, datev);
 		String Beforexpath = "//div[@class='portlet-body']//tbody//tr[";
 		
 		String Afterxpath ="]//td[3]";
@@ -67,8 +75,6 @@ public class AdminHomePage {
 			}
 		}
 	}
-	
-	
 	
 	
 }
