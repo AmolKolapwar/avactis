@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.avactis.utilities.Javascript;
 import com.avactis.utilities.WaitFunction;
 
 public class AdminHomePage {
@@ -44,11 +45,11 @@ public class AdminHomePage {
 		
 	WebElement date= driver.findElement(By.xpath("//input[@id='from_order_date']"));
 	String date_value = "30-03-2019";
-	datepicker(driver ,date, date_value);	
+	Javascript.datepicker(driver ,date, date_value);	
 	
 	WebElement date2 = driver.findElement(By.xpath("//input[@id='to_order_date']"));
 	String  datev = "05-05-2019";
-	datepicker(driver, date2, datev);
+	Javascript.datepicker(driver, date2, datev);
 		String Beforexpath = "//div[@class='portlet-body']//tbody//tr[";
 		
 		String Afterxpath ="]//td[3]";

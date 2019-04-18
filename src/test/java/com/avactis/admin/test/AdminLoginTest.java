@@ -3,6 +3,7 @@ package com.avactis.admin.test;
 import static org.testng.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ public class AdminLoginTest  extends Testbase{
 	AdminHomePage adminhome;
 	
 	@BeforeMethod
-	public void setup(){
+	public void pageSetup(){
 		adminlogin= new AdminLogin(driver);
 		adminhome = new AdminHomePage(driver);
 	}

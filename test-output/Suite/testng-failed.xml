@@ -11,9 +11,11 @@
       <class name="com.avactis.admin.test.AdminLoginTest">
         <methods>
           <include name="teardown"/>
-          <include name="setup"/>
+          <include name="pageSetup"/>
           <include name="setup"/>
           <include name="table"/>
+          <include name="verifyLogin_PageUI"/>
+          <include name="verify_ValidLogin"/>
           <include name="extentSetUp"/>
         </methods>
       </class> <!-- com.avactis.admin.test.AdminLoginTest -->

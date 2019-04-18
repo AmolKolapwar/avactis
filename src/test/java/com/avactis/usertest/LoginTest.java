@@ -37,14 +37,14 @@ public class LoginTest extends Testbase {
 	  return data;
   }
   
-  @Test (dataProvider = "testing")
-  public void verifyValidLogin(String Username,String passwordt ) {
+  @Test 
+  public void verifyValidLogin() {
 	  extentTest = extent.createTest("verifyValidLogin");
 	  extentTest.log(Status.INFO, "Verify Valid Login");
-	  assertTrue(login.verifyLogin("Username", "passwordt"));
+	  assertTrue(login.verifyLogin("amol@test.com", "amol_123"));
  }
   
-  /*@Test
+  @Test
   public void verifyInvalidLogin(){	
 	  extentTest = extent.createTest("verifyInvalidLogin");
 	  assertTrue(login.verifyInvalidLogin("amol@test.com", "Testing"));
@@ -87,7 +87,7 @@ public void verifyNavigate_To_Ragistration(){
 }
 
 
-*/
+
 
 
 @AfterMethod

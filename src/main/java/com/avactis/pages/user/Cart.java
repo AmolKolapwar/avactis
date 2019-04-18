@@ -120,7 +120,6 @@ public class Cart extends LoadableComponent<Cart>{
 		try {
 			String productname = null;
 			String itemqunity = null;
-
 			// Get the All option from drop down.......
 			WebElement qunity = driver.findElement(By.name("quantity_in_cart[0]"));
 			Select qut = new Select(qunity);
@@ -189,11 +188,6 @@ public class Cart extends LoadableComponent<Cart>{
 	}
 		
 			
-			
-				
-					
-		
-		
 		public void verifyApplycoupanWithInvalidData(String coupan){
 			
 			WaitFunction.waitForElementPresent(PromoCode, 10);

@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import com.avactis.utilities.WaitFunction;
 
@@ -78,6 +79,9 @@ public class Registration   {
     
     @FindBy(xpath="//div[@class='registration_form']//div")
     WebElement Already_MSG;
+    
+    @FindBy (xpath="//div[@class='note note-danger']")
+   List <WebElement> errorMsg;
     
     public boolean validateBlank_Form(){
 		
@@ -173,4 +177,51 @@ public class Registration   {
 	}
 	
   
+	public void verifyErrorMsg(RegistratingMethod registration){
+		
+		
+		log.info("Try To Add Basic Info");
+		Email.sendKeys(registration.getEmail());
+		Password.sendKeys(registration.getPassword());
+		Re_TypePassword.sendKeys(registration.getRe_TypePassword());
+		FirstName.sendKeys(registration.getFirstName());
+		LastName.sendKeys(registration.getLastName());
+		Select country = new Select(Country);
+
+		country.selectByVisibleText(registration.getCountry());
+		Select state = new Select(State);
+		state.selectByVisibleText(registration.getState());
+		ZipCode.sendKeys(registration.getZipCode());
+		City.sendKeys(registration.getCity());
+		Address1.sendKeys(registration.getAddress1());
+		Address2.sendKeys(registration.getAddress2());
+		Phone.sendKeys(registration.getPhone());
+		Register_Button.click();
+
+	   
+		for (WebElement message : errorMsg){
+			
+			
+		
+		System.out.println(message.getText());
+	
+		if (message.equals("The password you entered is incorrect. Please enter the correct password.") && message.equals("Invalid data in field 'First Name'.") && message.equals("Invalid data in field 'Last Name'.") && message.equals("Invalid data in field 'E-mail'.") ){
+			
+			//Assert.assertEquals(errormsg, "The password you entered is incorrect. Please enter the correct password.");
+			System.out.println("Message dispaly for incorret password");
+		/*}else if (message.equals("Invalid data in field 'E-mail'.")){
+			
+			System.out.println("Message display for invalid  email");
+			
+		}else if (message.equals("Invalid data in field 'Last Name'.") && message.equals("Invalid data in field 'First Name'.")){
+			System.out.println("Message dispalyed for invalid last name");
+			*/
+		}else {
+			
+			System.out.println("Message not dispalyed proper ");
+		}
+		}
+		
+	}
+	
 }
