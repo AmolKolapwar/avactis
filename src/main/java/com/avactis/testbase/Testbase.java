@@ -16,7 +16,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterClass;
@@ -34,6 +33,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 public class Testbase extends FileManager{
 
@@ -76,12 +76,9 @@ public class Testbase extends FileManager{
 	
 	@BeforeClass
 	@Parameters({"browserType","appUrl"})
-	public WebDriver setup(){
-		
-		
+	public WebDriver setup(String browserName,String applicationURL){
 		// To Load Chrome driver Instance.
-		String browserName= prjprop.getProperty("brwoser");
-
+		
 		
 		//ChromeOptions options = new ChromeOptions();
 		if (browserName.equalsIgnoreCase("Chrome") ){
@@ -112,8 +109,7 @@ public class Testbase extends FileManager{
 		if (driver != null){
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
-			driver.get(prjprop.getProperty("url"));
-			//driver.get(applicationURL);
+			driver.get(applicationURL);
 			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
